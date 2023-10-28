@@ -51,7 +51,7 @@ body {
     width: 100%;
     font-size: 14px;
     line-height: 50px;
-    position: fixed ;
+    /* position: fixed ; */
     z-index: 10;
     background-color: #fff;
     transition: all .5s;

@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: #4a4a4a;
-        border-radius: 5px;
-    }
-    scrollbar-width: thin;
-    scrollbar-color: #16c6c6 #db2d2d;
-}
-
 body {
     background-color: #fffeeb;
     font-family: "OnePlus Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
@@ -91,6 +77,30 @@ body {
 
 .menu:hover {
     border-bottom: 1px solid red;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.bars {
+    display: none;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.menu2-container {
+    display: flex;
+}
+
+.menu-icon-container {
+    display: flex;
+}
+
+.bars {
+    display: none;
 }
 
 
@@ -1082,29 +1092,7 @@ span {
     filter: blur(0px);
 }
 
-.logo-container {
-    display: flex;
-}
 
-.bars {
-    display: none;
-}
-
-.menu-container {
-    display: flex;
-}
-
-.menu2-container {
-    display: flex;
-}
-
-.menu-icon-container {
-    display: flex;
-}
-
-.bars {
-    display: none;
-}
 
 .menus a {
     color: #ffffff;

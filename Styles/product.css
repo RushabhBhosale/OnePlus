@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: #fffeeb;
     font-family: "OnePlus Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
 }
 
@@ -114,6 +113,51 @@ body {
 .check {
     font-size: 100px;
 }
+
+/* ********************* */
+/*   Buttons
+/* ********************* */
+
+.btn-container {
+    height: 72px;
+    width: 100%;
+    padding: 8px 64px;
+    position: fixed;
+    bottom: 0;
+    z-index: 8;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    background-color: white;
+}
+
+.add-to-cart {
+    width: 304px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buy-now {
+    width: 304px;
+    background-color: #f50514;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
 
 /* ********************* */
 /*   Product Image */
@@ -253,6 +297,7 @@ body {
 .offers-btn {
     color: #f50514;
     border-radius: 2px;
+    cursor: pointer;
     font-size: 10px;
     padding-left: 12px;
     padding-right: 8px;
@@ -338,7 +383,7 @@ hr {
 }
 
 .address i {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 48px;
 }
 
@@ -520,9 +565,404 @@ span a:hover {
     text-align: center;
 }
 
+/* ********************* */
+/*   Protection Plan
+/* ********************* */
 
+.protection-plan {
+    padding: 32px 0;
+}
 
+.head1 {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
 
+.two-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    color: #f50514;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 7px 8px ;
+    border: 1px solid #f50514;
+}
+
+.damage {
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.damage-price {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.damage-price div {
+    font-size: 14px;
+}
+
+.damage-price p {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.damage-price p span {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.damage-desc {
+    font-size: 10px;
+    color: #828282;
+    margin-top: 9px;
+}
+
+.show-more {
+    font-size: 14px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.show-more i {
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+/* ********************* */
+/*   delivery
+/* ********************* */
+
+.delivery {
+    padding: 32px 0;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.fast p {
+    font-size: 14px;
+    color: #000;
+    opacity: 0.55;
+}
+
+.fast h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.order {
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.accurate {
+    display: flex;
+    gap: 15px;
+    color: #007bff;
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.accurate p {
+    font-weight: 500;
+}
+
+/* ********************* */
+/*       Still Questions      */
+/* ********************* */
+
+.still-questions {
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202309/26/rzpeyciHl6SPEtmE.jpg');
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    padding: 32px 24px;
+}
+
+.sq-text {
+    position: relative;
+    height: 100%;
+    width: 240px;
+}
+
+.sq-text-sub-head {
+    line-height: 20px;
+    color: white;
+    opacity: 0.75;
+}
+
+.sq-text-head {
+    line-height: 28px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.sq-text-join {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sq-text-join a {
+    color: white;
+}
+
+.warranty {
+    margin-top: 24px;
+}
+
+.year {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-w {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.left-w p {
+    font-size: 14px;
+}
+
+.left-w img {
+    width: 30px;
+}
+
+.right-w i {
+    opacity: 0.7;
+}
+
+/* ********************* */
+/*       Payments       */
+/* ********************* */
+
+.payments {
+    display: flex;
+    padding: 38px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payments-head {
+    font-size: 20px;
+}
+
+.payments-img img {
+    height: 20px;
+}
+
+/* ********************* */
+/*       Whats in the box      */
+/* ********************* */
+
+.box {
+    padding: 32px 0;
+    margin-bottom: 56px;
+}
+
+.box-head {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.box-img {
+    display: flex;
+    gap: 8px;
+}
+
+.box-image {
+    width: 116px;
+}
+
+.box-image img {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.box-image p {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ********************* */
+/*       Grid     */
+/* ********************* */
+
+.grids {
+    background-color: #f4f4f4;
+}
+
+.grid {
+    width: 86.42%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    height: 320px;
+    margin-bottom: 20px;
+}
+
+.grid-1 {
+    width: 41.6%;
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/D9Yl3oxdQOAGqAUs.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+    padding: 32px;
+}
+
+.grid-1-text {
+    width: 220px;
+    color: white;
+}
+
+.text-head {
+    width: 250px;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding: 11px 0;
+}
+
+.text-head-black {
+    width: 250px;
+    color: #000000;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding: 11px 0;
+}
+
+.text-sub-head {
+    font-size: 14px;
+    color: #828282;
+    line-height: 24px;
+}
+
+.grid-2 {
+    width: 59%;
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/QiLBFQwYg4cUX5rj.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+    padding: 32px;
+}
+
+.grid-2-text {
+    width: 330px;
+}
+
+.grid-2-text-head {
+    width: 250px;
+}
+
+.proxdr {
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/nSd4PsLyTRDKsAXO.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+}
+
+.gamechanging {
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/L7H3xZAv9mjW1isS.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+}
+
+.camera {
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/k5Dxky01qRWbLwNd.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+}
+
+.snapdragon {
+    background-image: url('https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/5AiDVzj1oXftuPD0.jpg?x-amz-process=image/format,webp/quality,Q_80');
+    background-position: center;
+    background-size: cover;
+}
+
+.learn-more {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 44px;
+}
+
+.learn-more i {
+    font-size: 12px;
+}
+.learn-more:hover {
+    color: #007bff;
+}
+
+/* ********************* */
+/*       Faq       */
+/* ********************* */
+
+.faqs {
+    width: 86.42%;
+    margin: auto;
+    padding-bottom: 107px;
+    margin-bottom: 65px;
+}
+
+.faq-head {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    font-size: 36px;
+}
+
+.faq {
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.084);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq i {
+    font-size: 14px;
+}
+
+.did-this {
+    width: 86.42%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 38px 0;
+}
+
+.did-this span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.did-this span a {
+    color: rgb(0, 0, 0);
+}
+
+.did-this span a:hover {
+    color: #007bff;
+}
 
 
 /* ********************* */
@@ -647,4 +1087,82 @@ span a:hover {
 .menus a:hover {
     color: rgb(255, 255, 255);
     opacity: 1;
+}
+
+@media (max-width: 1360px) {
+    .menu2-container {
+        display: none;
+    }
+    .nav-menu {
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .add-to-cart {
+        width: 250px;
+    }
+    .buy-now {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .bars {
+        display: block;
+    }
+    .menu-container {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-section {
+        display: block;
+    }
+    .prod-img {
+        position: static;
+        width: 100%;
+        height: 120vh;
+    }
+    .prod-details {
+        width: 100%;
+        padding: 15px;
+    }
+    .product-image {
+        position: static;
+    }
+    .image img {
+        width: 50%;
+    }
+    .pagination {
+        display: none;
+    }
+    .grid {
+        width: 100%;
+    }
+    .text-head {
+        font-size: 20px;
+    } 
+    .text-head-black {
+        font-size: 20px;
+    }
+    .text-sub-head {
+        font-size: 12px;
+        width: 180px;
+    }
+    .faqs {
+        width: 97%;
+    }
+    .btn-container {
+        width: 100%;
+        padding: 0;
+        height: 50px;
+        gap: 0px;
+    }
+    .add-to-cart {
+        width: 50%;
+    }
+    .buy-now {
+        width: 50%;
+    }
 }
